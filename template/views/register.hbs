@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    {{>navbar}}
+    <div class="cont">
+    <section class="container1">
+      <div class="head">Registration Form</div>
+      <form action="/register" method="POST" class="form">
+        <div class="input-box">
+          <label>Name</label>
+          <input type="text" placeholder="Enter First name" name="firstname" required />
+          <input type="text" placeholder="Enter Last name" name="lastname" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" name="email" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" name="phone" required />
+          </div>
+          <div class="input-box">
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age" name="age" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" value="male" checked/>
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" value="female"/>
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" value="prefer not to say"/>
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Password</label>
+          <div class="column">
+            <input type="password" placeholder="Password" name="password" required />
+            <input type="password" placeholder="Confirm password" name="confirmpassword" required/>
+          </div>
+        </div>
+        <input type="submit" class="btnRegister" value="Register">
+      </form>
+    </section>
+</div>
+  </body>
+</html>
